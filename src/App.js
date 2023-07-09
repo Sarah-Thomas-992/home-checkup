@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import HomeCheckup from './homeCheckup';
 import Welcome from './welcome';
 import Disclaimer from './disclaimer';
-import QuestionMap from './questionMap';
+import {QuestionMap} from './questionMap';
 import questionList from './questionList';
 import Checklist from './Checklist';
 
@@ -13,7 +13,13 @@ const App = () => {
   const [launch, makeLaunch]= useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [showChecklist, activateChecklist] = useState(false);
+  const checklistArray = [];
 
+  const updateArray = () => {
+      checklistArray.push();
+      console.log(checklistArray);
+  }
+ 
   const handleClick = () => {
     setIsVisible(!isVisible);
   };
@@ -40,7 +46,13 @@ const App = () => {
       <HomeCheckup handleClick={handleClick} isVisible={isVisible} />
       <Welcome isVisible={isVisible} handleClick2={handleClick2} disappear={disappear} launch={launch}/>
       <Disclaimer disappear={disappear} launchQuestions={launchQuestions} />
-      <QuestionMap activeIndex={activeIndex} handleNext={handleNext} launch={launch} showChecklist={showChecklist} />
+      <QuestionMap 
+        activeIndex={activeIndex}   
+        handleNext={handleNext} 
+        launch={launch} 
+        showChecklist={showChecklist}
+        updateArray={updateArray}
+        />
       <Checklist showChecklist={showChecklist} />
     </div>
   );

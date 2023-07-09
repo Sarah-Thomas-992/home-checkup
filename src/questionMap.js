@@ -1,7 +1,7 @@
 import React from 'react';
 import questionList from './questionList';
 
-const QuestionMap = (props) => {
+export const QuestionMap = (props) => {
     const currentQuestion = questionList[props.activeIndex];
 
 if (props.launch === true && props.showChecklist === false){
@@ -9,14 +9,11 @@ if (props.launch === true && props.showChecklist === false){
         <div>
         <img src={currentQuestion.image} alt={currentQuestion.imageSRC} />
         <p>{currentQuestion.question}</p>
-        <label>
-            <input type="radio" name="option" value="option1" onClick={props.handleNext} />
-            {currentQuestion.answerYes}
-        </label>
-        <label>
-            <input type="radio" name="option" value="option2" onClick={props.handleNext} />
-            {currentQuestion.answerNo}
-        </label>
+        <button onClick={()=>{
+            props.handleNext();
+            props.updateArray(currentQuestion.actionItem);
+        }}>{currentQuestion.answerYes}</button>
+        <button onClick={props.handleNext}>{currentQuestion.answerNo}</button>
         </div>
     )
 } else{
@@ -24,7 +21,5 @@ if (props.launch === true && props.showChecklist === false){
         <div></div>
     )
 }
-};
-
-export default QuestionMap; 
+}; 
 
