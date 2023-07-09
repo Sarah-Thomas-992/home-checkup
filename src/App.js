@@ -13,11 +13,11 @@ const App = () => {
   const [launch, makeLaunch]= useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [showChecklist, activateChecklist] = useState(false);
-  const checklistArray = [];
+  const [checklistArray, updateChecklist] = useState([]);
 
-  const updateArray = () => {
-      checklistArray.push();
-      console.log(checklistArray);
+  const updateArray = (placeholder) => {
+      const updatedArray= [...checklistArray, placeholder];
+      updateChecklist(updatedArray);
   }
  
   const handleClick = () => {
@@ -53,7 +53,7 @@ const App = () => {
         showChecklist={showChecklist}
         updateArray={updateArray}
         />
-      <Checklist showChecklist={showChecklist} />
+      <Checklist showChecklist={showChecklist} checklistArray={checklistArray} />
     </div>
   );
 

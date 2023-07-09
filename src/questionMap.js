@@ -3,6 +3,7 @@ import questionList from './questionList';
 
 export const QuestionMap = (props) => {
     const currentQuestion = questionList[props.activeIndex];
+    const placeholder = currentQuestion.actionItem;
 
 if (props.launch === true && props.showChecklist === false){
     return (
@@ -11,7 +12,7 @@ if (props.launch === true && props.showChecklist === false){
         <p>{currentQuestion.question}</p>
         <button onClick={()=>{
             props.handleNext();
-            props.updateArray(currentQuestion.actionItem);
+            props.updateArray(placeholder);
         }}>{currentQuestion.answerYes}</button>
         <button onClick={props.handleNext}>{currentQuestion.answerNo}</button>
         </div>
