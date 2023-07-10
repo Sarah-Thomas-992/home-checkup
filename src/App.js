@@ -42,7 +42,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className='App'>
       <HomeCheckup handleClick={handleClick} isVisible={isVisible} />
       <Welcome isVisible={isVisible} handleClick2={handleClick2} disappear={disappear} launch={launch}/>
       <Disclaimer disappear={disappear} launchQuestions={launchQuestions} />

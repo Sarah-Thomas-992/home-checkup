@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 
 // Images Imports
 import clutter from './img/clutter.jpg';

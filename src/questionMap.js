@@ -1,5 +1,6 @@
 import React from 'react';
 import questionList from './questionList';
+import './App.css';
 
 export const QuestionMap = (props) => {
     const currentQuestion = questionList[props.activeIndex];
@@ -7,8 +8,8 @@ export const QuestionMap = (props) => {
 
 if (props.launch === true && props.showChecklist === false){
     return (
-        <div>
-        <img src={currentQuestion.image} alt={currentQuestion.imageSRC} />
+        <div className='App'>
+        {/* <img src={currentQuestion.image} alt={currentQuestion.imageSRC} /> */}
         <p>{currentQuestion.question}</p>
         <button onClick={()=>{
             props.handleNext();

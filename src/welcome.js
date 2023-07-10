@@ -1,11 +1,12 @@
 import React from 'react';
 import welcome from './img/welcome.jpg';
+import './App.css';
 
 const Welcome = (props) => {
     if (props.isVisible===false && props.disappear===false && props.launch===false){
         return (
-            <div className="welcome">
-                <img src={welcome} alt="A living room" />
+            <div className='App'>
+                {/* <img src={welcome} alt="A living room" /> */}
                 <p>Welcome!  Among the elderly, falls are a serious problem.  According to the 
                     CDC, an older adult falls every second.  Falls can have serious consequences, 
                     including traumatic brain injury, hip fractures, and death.</p>
