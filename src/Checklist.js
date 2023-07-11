@@ -15,14 +15,15 @@ const Checklist = (props) => {
         )
     } else if (endArray.length===0){
         return(
-            <div className='App'>
+            <div className='App, checklist'>
+                <img src={checklist} alt="A checklist" />
                 <h1>Your home has no obvious hazards, and no action is needed.  Congratulations!</h1>
                 <button onClick={handleRefresh}>Click here to return to start</button>
             </div>
         )
     } else {
         return(
-            <div className='App'>
+            <div className='App, checklist'>
                 <img src={checklist} alt="A checklist" />
                 <h1>Here are the actions you can take to improve the safety of your home!  Good luck!</h1>
                 <ul>
