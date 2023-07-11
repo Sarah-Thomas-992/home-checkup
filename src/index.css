@@ -2,10 +2,6 @@ body {
   background-color: #d2ccab;
   margin: 0;
   padding: 0;
-  background-image: url("./img/header.jpg");
-  background-position: top;
-  background-size: 100%;
-  background-repeat: no-repeat;
 }
 
 code {

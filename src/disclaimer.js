@@ -6,7 +6,7 @@ const Disclaimer = (props) => {
     if (props.disappear===true){
         return (
             <div className='App'>
-                {/* <img src={disclaimer} alt="A smiley face and the words stay safe written on the ground" /> */}
+                <img src={disclaimer} alt="A smiley face and the words stay safe written on the ground" />
                 <p>This site is not to be taken as medical advice or opinion.  Information from this site comes from the CDC's STEADI program (see the links below for more information).  Please consult with your doctor if you have any questions.</p>  
                 <p>After answering questions about your home, you will be presented with a list of action items to make your home safer.  Do not perform any task that would put you at risk of injury or fall.  If you feel unsafe doing one of the tasks, ask a family member or friend to perform it for you.</p>
                 <ul>

@@ -9,7 +9,7 @@ export const QuestionMap = (props) => {
 if (props.launch === true && props.showChecklist === false){
     return (
         <div className='App'>
-        {/* <img src={currentQuestion.image} alt={currentQuestion.imageSRC} /> */}
+        <img src={currentQuestion.image} alt={currentQuestion.imageSRC} />
         <p>{currentQuestion.question}</p>
         <button onClick={()=>{
             props.handleNext();

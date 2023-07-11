@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import checklist from './img/Checklist.jpg';
 
 const Checklist = (props) => {
     const endArray = props.checklistArray;
@@ -22,6 +23,7 @@ const Checklist = (props) => {
     } else {
         return(
             <div className='App'>
+                <img src={checklist} alt="A checklist" />
                 <h1>Here are the actions you can take to improve the safety of your home!  Good luck!</h1>
                 <ul>
                     {endArray.map((item, index) => (
