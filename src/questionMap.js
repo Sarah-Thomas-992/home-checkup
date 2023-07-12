@@ -8,7 +8,7 @@ export const QuestionMap = (props) => {
 
 if (props.launch === true && props.showChecklist === false){
     return (
-        <div className='App'>
+        <div className='App, questionMap'>
         <img src={currentQuestion.image} alt={currentQuestion.imageSRC} />
         <p>{currentQuestion.question}</p>
         <button onClick={()=>{

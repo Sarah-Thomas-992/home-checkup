@@ -14,13 +14,11 @@ body {
 
 img {
   width: 100%;
-  height: auto;
-  overflow: hidden;
 }
 
-h1{
+h1 {
   width: 80%;
-  font-size: 3.1em;
+  font-size: 5em;
   font-family: 'Pacifico', cursive;
   font-weight: 400;
 }
@@ -31,7 +29,7 @@ button {
   width: 50%;
   border: none;
   border-radius: 5px;
-  margin: 20px;
+  margin: 20px 20px 40px 20px;
   padding: 15px;
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
@@ -39,7 +37,7 @@ button {
 }
 
 p {
-  width: 80%;
+  width: 85%;
   text-align: center;
   font-size: 1.5em;
   margin: 15px 0;
@@ -51,80 +49,122 @@ ul {
   text-align: left;
   width: 80%;
   font-size: 1.5em;
-  list-style: circle ;
+  list-style: circle;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
 }
 
-.homePage{
-  width: 100%;
-  height: 900px;
-  background: url('./img/home-page.jpg') no-repeat center;
-  background-position: top;
-  background-size: cover;
-}
-
 .homePage h1 {
-  padding: 21px 0 600px 0;
+  padding: 50px 0 40px 0;
   width: 100%;
 }
 
-.checklist {
+.homePage button {
+  margin: 70px 0;
+}
+
+.disclaimer,
+.questionMap,
+.checklist,
+.homePage,
+.paragraphs,
+.welcome {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .checklist h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 2em;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
 }
 
 
-
-
 @media only screen and (min-width: 768px) {
-  .homePage{
-    background-image: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .homePage {
+    width: 80%;
   }
 
   .homePage h1 {
     padding: 0;
-  } 
+    font-size: 7em;
+  }
 
   .homePage button {
-    margin: 0;
-  } 
+    margin: 80px 0;
+    width: 40%;
+  }
 
-  button{
-  width: 20%;
-}
+  .homePage img {
+    width: 100%;
+  }
 
-p {
-  width: 50%;
-}
-
-img {
-  width: 30%;
-  padding-top: 20px;
-}
-}
-
-@media only screen and (min-width: 1200px) {
-  button{
-    width: 15%;
+  button {
+    width: 30%;
   }
 
   p {
-    width: 40%;
-  }
+    width: 75%;
   }
 
+  img {
+    width: 70%;
+    padding-top: 60px;
+  }
+
+ ul {
+    width: 70%;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .App,
+  .welcome {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .paragraphs {
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  button {
+    width: 30%;
+  }
+
+  img {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .disclaimer ul {
+    width: 40%;
+  }
+
+  .homePage h1 {
+    padding: 100px 0 0 0;
+    margin: 0;
+    font-size: 7em;
+  }
+
+  .homePage button {
+    margin: 80px 0;
+    width: 30%;
+  }
+
+  .homePage img {
+    width: 80%;
+  }
+}
