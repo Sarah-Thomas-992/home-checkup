@@ -68,7 +68,10 @@ ul {
 .checklist,
 .homePage,
 .paragraphs,
-.welcome {
+.welcome, 
+.welcome-img,
+.disclaimer-img, 
+.map-img {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -125,18 +128,47 @@ ul {
 
 @media only screen and (min-width: 1200px) {
   .App,
-  .welcome {
+  .welcome, 
+  .disclaimer,
+  .questionMap {
     flex-direction: row;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
+  .welcome,
+  .disclaimer,
+  .questionMap {
+    margin-top: 75px;
+  }
+
   .paragraphs {
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .paragraphs p {
+    text-align: left;
+    line-height: 1.8em;
+  }
+
+  .questionMap .paragraphs {
+    justify-content:left;
+    align-items: center;
+    line-height: 1.8em;
+  }
+
+  .welcome-img,
+  .disclaimer-img,
+  .map-img {
+    margin: 0;
+    padding: 0;
+    width: 50%;
   }
   
   button {
@@ -144,17 +176,13 @@ ul {
   }
 
   img {
-    width: 60%;
+    width: 80%;
     margin: 0;
     padding: 0;
   }
 
-  .disclaimer ul {
-    width: 40%;
-  }
-
   .homePage h1 {
-    padding: 100px 0 0 0;
+    padding: 100px 0 30px 0;
     margin: 0;
     font-size: 7em;
   }

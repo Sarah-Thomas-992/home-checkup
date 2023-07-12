@@ -6,7 +6,7 @@ const Welcome = (props) => {
     if (props.isVisible === false && props.disappear === false && props.launch === false) {
         return (
             <div className='App, welcome'>
-                <div>
+                <div className='welcome-img'>
                 <img src={welcome} alt="A living room" />
                 </div>
                 <div className='paragraphs'>
