@@ -18,7 +18,10 @@ const Welcome = (props) => {
                         a step-by-step screen of your (or a loved one's) home.  You will first answer
                         a series of questions.  Afterward, you'll be presented with a list of actions
                         you can take to increase the safety of the home.</p>
-                    <button onClick={props.handleClick2}>Click for a quick disclaimer</button>
+                    <button onClick={() => {
+                        props.handleClick2();
+                        scrollToTop();
+                    }}>Click for a quick disclaimer</button>
                 </div>
             </div>
         )

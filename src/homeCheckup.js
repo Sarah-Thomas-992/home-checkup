@@ -8,7 +8,10 @@ const HomeCheckup = (props) => {
             <div className='App, homePage'>
                 <h1>Home Checkup</h1>
                 <img src={plant} alt="A row of houseplants that line up to make an outline of a house between each plant" />
-                <button onClick={props.handleClick}>Click here to start</button>
+                <button onClick={() => {
+                    handleClick();
+                    scrollToTop();
+                }}>Click here to start</button>
             </div>
         )
     }

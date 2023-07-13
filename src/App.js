@@ -24,6 +24,10 @@ const App = () => {
     setIsVisible(!isVisible);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const handleClick2 = () => {
     notDisappear(!disappear);
   };
@@ -43,17 +47,18 @@ const App = () => {
 
   return (
     <div className='App'>
-      <HomeCheckup handleClick={handleClick} isVisible={isVisible} />
-      <Welcome isVisible={isVisible} handleClick2={handleClick2} disappear={disappear} launch={launch} />
-      <Disclaimer disappear={disappear} launchQuestions={launchQuestions} />
+      <HomeCheckup handleClick={handleClick} isVisible={isVisible} scrollToTop={scrollToTop} />
+      <Welcome isVisible={isVisible} handleClick2={handleClick2} disappear={disappear} launch={launch} scrollToTop={scrollToTop} />
+      <Disclaimer disappear={disappear} launchQuestions={launchQuestions} scrollToTop={scrollToTop} />
       <QuestionMap
         activeIndex={activeIndex}
         handleNext={handleNext}
         launch={launch}
         showChecklist={showChecklist}
         updateArray={updateArray}
+        scrollToTop={scrollToTop}
       />
-      <Checklist showChecklist={showChecklist} checklistArray={checklistArray} />
+      <Checklist showChecklist={showChecklist} checklistArray={checklistArray} scrollToTop={scrollToTop} />
     </div>
   );
 

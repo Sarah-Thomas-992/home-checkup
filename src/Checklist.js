@@ -21,7 +21,11 @@ const Checklist = (props) => {
                 </div>
                 <div className='paragraphs'>
                     <h1>Your home has no obvious hazards, and no action is needed.  Congratulations!</h1>
-                    <button onClick={handleRefresh}>Click here to return to start</button>
+                    <button onClick={() => {
+                        handleRefresh();
+                        scrollToTop();
+                    }}>
+                        Click here to return to start</button>
                 </div>
             </div>
         )
@@ -39,7 +43,10 @@ const Checklist = (props) => {
                         )
                         )}
                     </ul>
-                    <button onClick={handleRefresh}>Click here to return to start</button>
+                    <button onClick={() => {
+                        handleRefresh();
+                        scrollToTop();
+                    }}>Click here to return to start</button>
                 </div>
             </div>
         )
@@ -58,7 +65,10 @@ const Checklist = (props) => {
                         )
                         )}
                     </ul>
-                    <button onClick={handleRefresh}>Click here to return to start</button>
+                    <button onClick={() => {
+                        handleRefresh();
+                        scrollToTop();
+                    }}>Click here to return to start</button>
                 </div>
             </div>
         )

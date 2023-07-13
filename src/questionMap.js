@@ -17,8 +17,12 @@ export const QuestionMap = (props) => {
                     <button onClick={() => {
                         props.handleNext();
                         props.updateArray(placeholder);
+                        scrollToTop();
                     }}>{currentQuestion.answerYes}</button>
-                    <button onClick={props.handleNext}>{currentQuestion.answerNo}</button>
+                    <button onClick={() => {
+                        props.handleNext();
+                        scrollToTop();
+                    }}>{currentQuestion.answerNo}</button>
                 </div>
             </div>
         )
