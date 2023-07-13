@@ -25,7 +25,7 @@ h1 {
 
 button {
   color: #ffffff;
-  background-color: #627e6a;
+  background-color: #5A7261;
   width: 50%;
   border: none;
   border-radius: 5px;
@@ -34,6 +34,10 @@ button {
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+}
+
+button:hover {
+  background-color: #3c4d41;
 }
 
 p {
@@ -68,9 +72,9 @@ ul {
 .checklist,
 .homePage,
 .paragraphs,
-.welcome, 
+.welcome,
 .welcome-img,
-.disclaimer-img, 
+.disclaimer-img,
 .map-img {
   text-align: center;
   display: flex;
@@ -120,19 +124,21 @@ ul {
     padding-top: 60px;
   }
 
- ul {
+  ul {
     width: 70%;
   }
 }
 
 
 @media only screen and (min-width: 1200px) {
+
   .App,
-  .welcome, 
+  .welcome,
   .disclaimer,
-  .questionMap {
+  .questionMap,
+  .checklist {
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     width: 100%;
     margin: 0;
@@ -141,7 +147,8 @@ ul {
 
   .welcome,
   .disclaimer,
-  .questionMap {
+  .questionMap,
+  .checklist {
     margin-top: 75px;
   }
 
@@ -158,19 +165,26 @@ ul {
   }
 
   .questionMap .paragraphs {
-    justify-content:left;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     line-height: 1.8em;
+    width: 30%;
   }
+
+  .questionMap button {
+    margin-left: 0;
+  }
+
 
   .welcome-img,
   .disclaimer-img,
-  .map-img {
+  .map-img,
+  .checklist-img {
     margin: 0;
     padding: 0;
     width: 50%;
   }
-  
+
   button {
     width: 30%;
   }

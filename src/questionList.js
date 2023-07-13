@@ -30,12 +30,12 @@ const questionList = [
         actionItem: "Remove rugs or secure them with double-sided tape or non-slip backing.",
         image: rugs,
         imageSRC: "A rug on a kitchen floor"
-    }, 
+    },
     {
         question: "Is the bathroom missing grab bars next to the tub, inside the tub, or next to the toilet?",
         answerYes: "Yes",
         answerNo: "No",
-        actionItem: "Install grab bars in the bathroom next to and inside the tub, and next to the toilet.", 
+        actionItem: "Install grab bars in the bathroom next to and inside the tub, and next to the toilet.",
         image: grabBars,
         imageSRC: "A bathtub"
     },
@@ -105,5 +105,5 @@ const questionList = [
     },
 ]
 
-export default questionList; 
+export default questionList;
 

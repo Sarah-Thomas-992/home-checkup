@@ -7,7 +7,7 @@ const Welcome = (props) => {
         return (
             <div className='App, welcome'>
                 <div className='welcome-img'>
-                <img src={welcome} alt="A living room" />
+                    <img src={welcome} alt="A living room" />
                 </div>
                 <div className='paragraphs'>
                     <p>Welcome!  Among the elderly, falls are a serious problem.  According to the
@@ -17,7 +17,7 @@ const Welcome = (props) => {
                         hazards that increase fall risk.  This website is designed to take you through
                         a step-by-step screen of your (or a loved one's) home.  You will first answer
                         a series of questions.  Afterward, you'll be presented with a list of actions
-                        you can take to increase the safety of your home.</p>
+                        you can take to increase the safety of the home.</p>
                     <button onClick={props.handleClick2}>Click for a quick disclaimer</button>
                 </div>
             </div>

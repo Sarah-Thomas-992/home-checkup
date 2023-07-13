@@ -1,10 +1,9 @@
-import { isVisible } from '@testing-library/user-event/dist/utils';
 import React from 'react';
 import './App.css';
 import plant from './img/plant.png';
 
 const HomeCheckup = (props) => {
-    if (props.isVisible===true){
+    if (props.isVisible === true) {
         return (
             <div className='App, homePage'>
                 <h1>Home Checkup</h1>
@@ -14,10 +13,10 @@ const HomeCheckup = (props) => {
         )
     }
     else {
-        return(
+        return (
             <div></div>
         )
     }
-} 
+}
 
 export default HomeCheckup; 
