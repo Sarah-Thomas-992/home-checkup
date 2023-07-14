@@ -10,13 +10,18 @@ const Disclaimer = (props) => {
                     <img src={disclaimer} alt="A smiley face and the words stay safe written on the ground" />
                 </div>
                 <div className='paragraphs'>
-                    <p>This site is not to be taken as medical advice or opinion.  Information from
-                        this site comes from the CDC's STEADI program (see the links below for more
-                        information).  Please consult with your doctor if you have any questions.</p>
+                    <p>This site is not to be taken as medical advice or opinion.  Its information 
+                        comes from the CDC's STEADI program (see the links below for more
+                        in-depth information on falls and fall prevention.  This information is available 
+                        free of charge).  Usage of this information does not constitute this site's 
+                        endorsement or recommendation by the U.S. Government, Department of Health 
+                        and Human Services, or Centers for Disease Control and Prevention.  
+                        Please consult with your doctor or another medical professional if you 
+                        have any questions about this site.</p>
                     <p>After answering questions about your home, you will be presented with a list
                         of action items to make your home safer.  Do not perform any task that would
                         put you at risk of an injury or fall.  If you feel unsafe doing any of the
-                        tasks, ask a family member or friend to perform it for you.</p>
+                        action items, ask a family member or friend to perform it for you.</p>
                     <ul>
                         <li><a href='https://www.cdc.gov/steadi/patient.html'>CDC STEADI Site</a></li>
                         <li><a href='https://www.cdc.gov/steadi/pdf/STEADI-CaregiverBrochure.pdf'>CDC STEADI Caregiver Brochure</a></li>
