@@ -20,7 +20,7 @@ const Welcome = (props) => {
                         you can take to increase the safety of the home.</p>
                     <button onClick={() => {
                         props.handleClick2();
-                        scrollToTop();
+                        props.scrollToTop();
                     }}>Click for a quick disclaimer</button>
                 </div>
             </div>

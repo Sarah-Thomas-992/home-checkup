@@ -9,8 +9,8 @@ const HomeCheckup = (props) => {
                 <h1>Home Checkup</h1>
                 <img src={plant} alt="A row of houseplants that line up to make an outline of a house between each plant" />
                 <button onClick={() => {
-                    handleClick();
-                    scrollToTop();
+                    props.handleClick();
+                    props.scrollToTop();
                 }}>Click here to start</button>
             </div>
         )

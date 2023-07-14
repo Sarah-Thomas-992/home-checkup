@@ -29,7 +29,7 @@ const Disclaimer = (props) => {
                     </ul>
                     <button onClick={() => {
                         props.launchQuestions();
-                        scrollToTop();
+                        props.scrollToTop();
                     }}>Click here to start the screen</button>
                 </div>
             </div>
