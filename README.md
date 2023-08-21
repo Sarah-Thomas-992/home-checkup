@@ -1,3 +1,11 @@
+# Major Functions/Purpose
+
+This app is designed to help either the elderly or their loved ones screen a home for hazards that might contribute to a fall.  After providing the participant with brief education and a disclaimer, it walks them through a series of yes/no questions about the state of their home.  At the end, the participant is provided with a customized list of suggestions to improve the safety of the home.  
+
+This app was designed and coded by Sarah Thomas.  Additional information on the fall screening content can be found on the CDC's STEADI website (https://www.cdc.gov/steadi/index.html). 
+
+This app was built with Create React App.  See below for instructions regarding the use of Create React App.  
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
